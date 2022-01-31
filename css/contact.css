@@ -1,0 +1,317 @@
+/* color:  red#ec1c24, black#212d31, grey#343a40, white#eee  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #212d31;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contain {
+  background-color: #eee;
+  max-width: 1170px;
+  margin :auto;
+  padding: 1em;
+}
+
+div.form {
+  background-color: #eee;
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #ec1c24;
+}
+
+.highlight-text {
+  color: #ec1c24;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #ec1c24;
+  color: #ec1c24;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #ec1c24;
+  outline: 0;
+  color: #eee;
+}
+.error {
+  color: #ec1c24;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}

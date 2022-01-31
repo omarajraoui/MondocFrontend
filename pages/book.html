@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/book.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Rendez-vous </title>
+</head>
+<body>
+  <header id="top"> 
+    <div class="scrollTOP">
+    </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="index.html">
+    <img src="logo.PNG" class="imgmobiblanc" alt="logo-mobiblanc">
+    </a> -->
+    <a href="/pages/index.html"><img src="https://see.fontimg.com/api/renderfont4/vmgK9/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TW9uRG9j/billion-dreams.png" alt="Cursive fonts"></a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse navbarbar " id="navbarColor02">
+        <ul class="navbar-nav me-auto text-center ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/index.html">HOME <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">SERVICES <span class="sr-only"></span></a>
+          </li>
+  
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/doctors.html">DOCTORS <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/AddPatient.html">PATIENTS <span class="sr-only"></span></a>
+          </li>
+          
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/contact.html">CONTACT <span class="sr-only"></span></a>
+          </li>
+  
+        </ul>
+        <span class="login">
+          <a class="nav-link " href="/pages/login.html">LOGIN <span class="sr-only"></span></a>
+        </span>
+  
+      </div>
+    </div>
+  </nav>
+  </header>
+
+
+  <div class="containing pb-5">
+    <div class="content">
+      <div class="calendar-container">
+        <div class="calendar"> 
+          <div class="year-header"> 
+            <span class="left-button" id="prev"> &lang; </span> 
+            <span class="year" id="label"></span> 
+            <span class="right-button" id="next"> &rang; </span>
+          </div> 
+          <table class="months-table"> 
+            <tbody>
+              <tr class="months-row">
+                <td class="month">Jan</td> 
+                <td class="month">Fev</td> 
+                <td class="month">Mar</td> 
+                <td class="month">Avr</td> 
+                <td class="month">Mai</td> 
+                <td class="month">Jui</td> 
+                <td class="month">Juil</td>
+                <td class="month">Aug</td> 
+                <td class="month">Sep</td> 
+                <td class="month">Oct</td>          
+                <td class="month">Nov</td>
+                <td class="month">Dec</td>
+              </tr>
+            </tbody>
+          </table> 
+          
+          <table class="days-table"> 
+            <td class="day">Sun</td> 
+            <td class="day">Mon</td> 
+            <td class="day">Tue</td> 
+            <td class="day">Wed</td> 
+            <td class="day">Thu</td> 
+            <td class="day">Fri</td> 
+            <td class="day">Sat</td>
+          </table> 
+          <div class="frame"> 
+            <table class="dates-table"> 
+                <tbody class="tbody">             
+                </tbody> 
+            </table>
+          </div> 
+          <button class="button" id="add-button">Ajouter Patient</button>
+        </div>
+      </div>
+      <div class="events-container">
+      </div>
+      <div class="dialog" id="dialog">
+          <h2 class="dialog-header"> Ajouter nouveau Patient </h2>
+          <form class="form" id="form">
+            <div class="form-container"  align="center">
+              <label class="form-label" id="valueFromMyButton" for="name">Nom Patient</label>
+              <input class="input" type="text" id="name" maxlength="36">
+              <label class="form-label" id="valueFromMyButton" for="count">Nombre d'accompagnants</label>
+              <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+              <input type="button" value="Cancel" class="button" id="cancel-button">
+              <input type="button" value="OK" class="button" id="ok-button">
+            </div>
+          </form>
+        </div>
+    </div>
+
+
+  </div>
+
+  <footer class="footer-section ">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Nous Retrouvez</h4>
+                            <span>177 agdal avenue de france ,Casablanca</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Appelez-nous</h4>
+                            <span>+212612215103</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>CONTACT@MONDOC.COM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="/pages/index.html">
+                              <img src="assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Notre clinique  offre à la grande région de Casablanca-Settat et des environs une vaste gamme de services et de traitements médicaux.
+                            </p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Abonnez-vous</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Liens Utiles</h3>
+                        </div>
+                        <ul>
+                          <li><a href="/pages/index.html">Home</a></li>
+                          <li><a href="">Services </a></li>
+                          <li><a href="/pages/contact.html">Rendez-vous</a></li>
+                          <li><a href="/pages/doctors.html">Doctors</a></li>
+                          <li><a href="/pages/contact.html">Contact</a></li>
+                          <li><a href="/pages/login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>N'oubliez pas de suivre notre newsletter , veillez svp remplir le formulaire ci-dessous .</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Adresse Mail">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved <a href="/pages/index.html">MonDoc</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                      <ul>
+                        <li><a href="/pages/index.html">Home</a></li>
+                        <li><a href="#">Services </a></li>
+                        <li><a href="/pages/book.html">Rendez-vous</a></li>
+                        <li><a href="/pages/doctors.html">Doctors</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/javascript/book.js"></script>
+  
+</body>
+</html>
